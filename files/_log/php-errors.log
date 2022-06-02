@@ -1,0 +1,28 @@
+[2022-06-02 13:40:07] glpiphplog.WARNING:   *** PHP User Warning (512): Missing required intl PHP extension in /home/pedro/glpi/src/Session.php at line 682
+  Backtrace :
+  src/Session.php:682                                trigger_error()
+  src/Console/Application.php:435                    Session::loadLanguage()
+  src/Console/Application.php:109                    Glpi\Console\Application->computeAndLoadOutputLang()
+  bin/console:121                                    Glpi\Console\Application->__construct()
+  
+[2022-06-02 13:40:07] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:40:07] glpiphplog.CRITICAL:   *** Uncaught Exception Error: Class 'Normalizer' not found in /home/pedro/glpi/vendor/symfony/console/Helper/Helper.php at line 65
+  Backtrace :
+  vendor/symfony/console/Helper/Table.php:814        Symfony\Component\Console\Helper\Helper::width()
+  vendor/symfony/console/Helper/Table.php:796        Symfony\Component\Console\Helper\Table->getCellWidth()
+  vendor/symfony/console/Helper/Table.php:387        Symfony\Component\Console\Helper\Table->calculateColumnsWidth()
+  ...Console/System/CheckRequirementsCommand.php:110 Symfony\Component\Console\Helper\Table->render()
+  vendor/symfony/console/Command/Command.php:298     Glpi\Console\System\CheckRequirementsCommand->execute()
+  vendor/symfony/console/Application.php:1015        Symfony\Component\Console\Command\Command->run()
+  src/Console/Application.php:256                    Symfony\Component\Console\Application->doRunCommand()
+  vendor/symfony/console/Application.php:299         Glpi\Console\Application->doRunCommand()
+  vendor/symfony/console/Application.php:171         Symfony\Component\Console\Application->doRun()
+  bin/console:122                                    Symfony\Component\Console\Application->run()
+  
+[2022-06-02 13:42:46] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:44:16] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:44:54] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:44:54] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:54:45] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:55:56] glpiphplog.WARNING: Test logger  
+[2022-06-02 13:56:32] glpiphplog.WARNING: Test logger  
